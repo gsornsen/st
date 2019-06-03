@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=st
+Exec=/usr/local/bin/st
+Icon=/usr/share/icons/st/icon.png
+Terminal=false
+Type=Application
+Categories=Development;Terminal;

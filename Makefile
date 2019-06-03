@@ -41,6 +41,9 @@ dist: clean
 	rm -rf st-$(VERSION)
 
 install: st
+	mkdir -p /usr/share/icons/st
+	cp -f icon.png /usr/share/icons/st
+	cp -f st.desktop /usr/share/applications
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f st $(DESTDIR)$(PREFIX)/bin
 	cp -f st-copyout $(DESTDIR)$(PREFIX)/bin
@@ -53,6 +56,8 @@ install: st
 	@echo Please see the README file regarding the terminfo entry of st.
 
 uninstall:
+	rm -rf /usr/share/icons/st
+	rm -f /usr/share/applications/st.desktop
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(PREFIX)/bin/st-copyout
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
