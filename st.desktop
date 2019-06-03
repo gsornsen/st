@@ -4,4 +4,11 @@ Exec=/usr/local/bin/st
 Icon=/usr/share/icons/st/icon.png
 Terminal=false
 Type=Application
-Categories=Development;Terminal;
+Categories=Development;Terminal;Utilities;
+Actions=new-window;
+Keywords=st;terminal;terminal-emulator;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=/usr/local/bin/st
+Icon=/usr/share/icons/st/icon.png
