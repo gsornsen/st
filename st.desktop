@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=st
-Exec=/usr/local/bin/st
+Exec=/usr/local/bin/st -t ''
 Icon=/usr/share/icons/st/icon.png
 Terminal=false
 Type=Application
@@ -10,5 +10,5 @@ Keywords=st;terminal;terminal-emulator;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/local/bin/st
+Exec=/usr/local/bin/st -t ''
 Icon=/usr/share/icons/st/icon.png
