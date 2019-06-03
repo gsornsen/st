@@ -5,7 +5,10 @@ Forked from [VebbNix](https://github.com/VebbNix/st)
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features and themed to match [Pop_OS!](https://system76.com/pop) that make it literally the best terminal emulator ever:
 
 ![neofetch](screenshots/neofetch.png)
+![cmatrix](screenshots/cmatrix.gif)
 ![clean](screenshots/blank.png)
+![htop](screenshots/htop.png)
+![tty-clock](screenshots/tty-clock.png)
 
 ## Unique features (using dmenu)
 
