@@ -1,6 +1,8 @@
-# Luke's build of st - the simple (suckless) terminal
+# Gerald's build of st - the simple (suckless) terminal
 
-The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
+Forked from [VebbNix](https://github.com/VebbNix/st)
+
+The [suckless terminal (st)](https://st.suckless.org/) with some additional features and themed to match [Pop_OS!](https://system76.com/pop) that make it literally the best terminal emulator ever:
 
 ## Unique features (using dmenu)
 
@@ -17,9 +19,9 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 
 ## Pretty stuff
 
-+ Compatibility with `Xresources` and `pywal` for dynamic colors. The `Xdefaults` file shows a usage example.
-+ Default [gruvbox](https://github.com/morhetz/gruvbox) colors otherwise.
-+ Transparency/alpha, which is also adjustable from your `Xresources`.
++ Compatibility with `.Xresources` and `pywal` for dynamic colors. The `.Xresources` file shows a usage example.
++ Default [Pop_OS!](https://github.com/pop-os/gtk-theme) colors otherwise.
++ Transparency/alpha, which is also adjustable from your `.Xresources`.
 + Default font is system "mono" at 16pt, meaning the font will match your system font.
 
 ## Other st patches
@@ -30,13 +32,13 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 
 ## Installation for newbs
 
-```
-git clone https://github.com/LukeSmithxyz/st
-cd st
-sudo make install
+```bash
+$ git clone https://github.com/gsornsen/st.git
+$ cd st
+$ sudo apt install build-essential libx11-dev libxft-dev fontconfig
+$ sudo make install
 ```
 
-Users of Arch-based distros can also install it from the AUR as [st-luke-git](https://aur.archlinux.org/packages/st-luke-git/).
 
 Obviously, `make` is required to build. `fontconfig` is required for the default build, since it asks `fontconfig` for your system monospace font.  It might be obvious, but `libX11` and `libXft` are required as well. Chances are, you have all of this installed already.
 
@@ -63,13 +65,13 @@ The `alpha` value (for transparency) goes from `0` (transparent) to `1` (opaque)
 
 To be clear about the color settings:
 
-- This build will use gruvbox colors by default and as a fallback.
-- If there are Xresources colors defined, those will take priority.
+- This build will use [Pop_OS!](https://system76.com/pop) colors by default and as a fallback.
+- If there are `.Xresources` colors defined, those will take priority.
 - But if `wal` has run in your session, its colors will take priority.
 
 Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
 
 ## Contact
 
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
+- Gerald Sornsen <gerald@sornsen.io>
+- [http://gerald.sornsen.io/](http://gerald.sornsen.io/)
